@@ -1,0 +1,9 @@
+<p>The demo application has a<strong> small bug</strong> at the moment:&nbsp;When adding multiple values, those values are added as strings instead of numbers.</p><p>Fixing it is easy though, simply make sure you enforce a number conversion:</p><p>In <code>ExpenseForm.js</code>, just change</p><pre class="prettyprint linenums">const expenseData = {
+  title: enteredTitle,
+  amount: enteredAmount,
+  date: new Date(enteredDate),
+};</pre><p>to</p><pre class="prettyprint linenums">const expenseData = {
+  title: enteredTitle,
+  amount: +enteredAmount,
+  date: new Date(enteredDate),
+};</pre><p>in the <code>submitHandler</code> function.</p>

@@ -1,0 +1,23 @@
+div,
+h1,
+h2,
+p,
+* {
+  margin: 0;
+  padding: 0;
+}
+.ExpenseItem {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+  margin: 3rem;
+  h1 {
+    color: #2d80b5;
+  }
+  h2 {
+    color: #4fb8b6;
+  }
+  h3 {
+    color: #b8779a;
+  }
+}
