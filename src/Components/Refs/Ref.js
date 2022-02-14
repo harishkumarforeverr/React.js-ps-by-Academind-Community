@@ -8,6 +8,8 @@ const RefComponet = () => {
     if (ageRef.current.value && nameRef.current.value) {
       console.log("nameRef.current.value : ", nameRef.current.value);
       console.log("ageRef.current.value : ", ageRef.current.value);
+      nameRef.current.value = "";
+      ageRef.current.value = "";
     } else {
       console.log("please enter a valid nameRef and aageRef");
     }
